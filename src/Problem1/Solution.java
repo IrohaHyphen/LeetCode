@@ -8,18 +8,18 @@ class Solution {
         int firstNumber = 0;
         int secondNumber = 0;
         
-        var map = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> numbers = new HashMap<>();
         
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             
-            if (map.containsKey(complement)) {
-                firstNumber = map.get(complement);
+            if (numbers.containsKey(complement)) {
+                firstNumber = numbers.get(complement);
                 secondNumber = i;
                 break;
             }
             
-            map.put(nums[i], i);
+            numbers.put(nums[i], i);
         }
         
         return new int[]{firstNumber, secondNumber};
