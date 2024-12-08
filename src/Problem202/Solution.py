@@ -1,3 +1,5 @@
+# Accepted 12/6/2024
+
 class Solution:
     def isHappy(self, n: int) -> bool:
         cycle = set()
