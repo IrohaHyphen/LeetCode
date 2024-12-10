@@ -5,6 +5,7 @@ class ListNode:
         self.next = next
 
 
+# Accepted 12/5/2024
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy_head = ListNode(0)
